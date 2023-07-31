@@ -8,10 +8,7 @@ setup(
     author_email='drshnp@outlook.com',
     url='https://github.com/1darshanpatil/termato.git',
     py_modules=['termato'],
-    install_requires=[
-        'winsound',
-        'win10toast',  #As, notifications will be added later for sys.platform:
-    ],
+    install_requires=['win10toast'],
     entry_points={
         'console_scripts': [
             'pomodoro=main:run_pomo',
