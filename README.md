@@ -32,6 +32,12 @@ This will start a pomodoro timer with a work interval of 30 minutes, a break of 
 - Press Ctrl+C during the timer to stop the script.
 
 
+Install the package
+```bash
+pip install termato
+pip3 install termato
+```
+
 ## Installation
 
 1. Clone the repository:
