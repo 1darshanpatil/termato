@@ -1,13 +1,13 @@
 from setuptools import setup
 
 setup(
-    name='termato',
-    version='0.1.0',
+    name='termoto',
+    version='0.1.1',
     description='A terminal and system argument based pomodoro',
     author='Darshan Patil',
     author_email='drshnp@outlook.com',
-    url='https://github.com/1darshanpatil/termato.git',
-    py_modules=['termato'],
+    url='https://github.com/1darshanpatil/termoto.git',
+    py_modules=['termoto'],
     install_requires=['win10toast'],
     entry_points={
         'console_scripts': [
