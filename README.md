@@ -1,16 +1,37 @@
 # termato
-termato is a Python-based pomodoro timer. Boost productivity with customizable work and break intervals, a progress bar, and notifications. Open-source, for better time management.
+BUILT TO address my own problem:
 
+https://psychology.stackexchange.com/questions/27694/the-perception-of-time-of-workaholics
 
+People working on their laptops often forget the whole world while they're engrossed in their work. Some fall into compulsive habits or disorders, while others dislike installing complicated and overly colorful GUI nonsense. There are those who prefer minimalist tools that simply get the job done.
 
+Basically, you know you need to get up and take a small break, but you convince yourself to finish "just one more thing," and before you know it, the entire day has slipped by. You’re still in front of your laptop or screen, trying to fix that one last thing. Sure, it’s rewarding, and I love that more than anything. But deep down, we know we need to take at least small breaks.
+
+This program was built for me, but I don’t see why others wouldn’t find it useful too.
+
+Why not simply buy a pomodoro? Well, I want my laptop to take care of me the way I do:)
 
 # Pomodoro Timer Help
 -------------------
 
-## Usage
+![image](15-5-3.png)
 
-python pomodoro.py [OPTIONS]
 
+## Install the package
+
+```bash
+pip install termato
+pip3 install termato
+```
+## How to execute
+
+```bash
+$ termato
+```
+Or
+```bash
+$ termato -w=25 -b=5 -r=4
+```
 ## Options
 
 - **-w=<work_time>**: Set the duration of each work interval in minutes. Default: 25 minutes.
@@ -18,12 +39,6 @@ python pomodoro.py [OPTIONS]
 - **-r=<rounds>**: Set the total number of completed pomodoro intervals (work round + break). Default: 4.
 - **-h**: Display this help message.
 
-## Example
-
-
-python pomodoro.py -w=30 -b=10 -r=3
-
-This will start a pomodoro timer with a work interval of 30 minutes, a break of 10 minutes, and 3 completed rounds.
 
 ## Note
 
@@ -31,39 +46,10 @@ This will start a pomodoro timer with a work interval of 30 minutes, a break of 
 - Only `-w`, `-b`, `-r` options are recognized. All other parameters will be ignored.
 - Press Ctrl+C during the timer to stop the script.
 
+## License
 
-Install the package
-```bash
-pip install termato
-pip3 install termato
-```
-
-## Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/1darshanpatil/termato
-   cd termato
-   ``````
-
-```
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-``````
+This project is licensed under the Custom License. See the [LICENSE](./LICENSE) file for details.
 
 
-```
-$pip install -r requirements.txt
-```
-
-How to execute without and with parameters for windows OS
-```
-python.exe pomodoro.py
-python.exe pomodoro.py -w=25 -b=5 -r=4
-```
-For Linux and MacOS
-```
-./pomodoro.py
-./pomodoro.py -w=25 -b=5 -r=4
-```
+## Future Versions, Bug, and Errors: 
+Well, I’m sorry, but I don’t have time for anything like that. Besides, I personally don’t think this code deserves much attention because it’s just a simple script turned into a command line and found this old script somewhere on my old file archives

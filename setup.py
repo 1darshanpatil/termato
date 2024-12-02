@@ -1,27 +1,45 @@
-from setuptools import setup
+from setuptools import setup, find_packages
+from termoto import __version__
+
+# Read the long description from README.md
+with open("README.md", encoding="utf-8") as f:
+    long_description = f.read()
 
 setup(
-    name='termoto',
-    version='0.1.1',
-    description='A terminal and system argument based pomodoro',
-    author='Darshan Patil',
-    author_email='drshnp@outlook.com',
-    url='https://github.com/1darshanpatil/termoto.git',
-    py_modules=['termoto'],
-    install_requires=['win10toast'],
+    name="termato",
+    version=__version__,
+    author="Darshan P.",
+    author_email="drshnp@outlook.com",
+    license="MIT",
+    description="A simple CLI Pomodoro timer.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/1darshanpatil/termato",
+    packages=find_packages(),
     entry_points={
-        'console_scripts': [
-            'pomodoro=main:run_pomo',
-        ],
+        "console_scripts": [
+            "termato=termoto.cli:main",
+        ]
     },
     classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
+        "Development Status :: 4 - Beta",
+        "Environment :: Console",
+        "Intended Audience :: End Users/Desktop",
+        "Topic :: Utilities",
+        "Topic :: Office/Business :: Scheduling",
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
     ],
+    install_requires=[
+        "colorama",
+    ],
+    python_requires=">=3.6",
+    include_package_data=True,
+    keywords="pomodoro, cli, time, productivity",
+    project_urls={
+        "Documentation": "https://github.com/1darshanpatil/termoto#readme",
+        "Source": "https://github.com/1darshanpatil/termoto",
+        "Tracker": "https://github.com/1darshanpatil/termoto/issues",
+    },
 )
