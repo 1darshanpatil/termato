@@ -1,0 +1,6 @@
+.venv/
+termato/__pycache__/
+termato.egg-info/
+build/
+dist/
+__pycache__

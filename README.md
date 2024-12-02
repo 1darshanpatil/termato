@@ -14,7 +14,7 @@ Why not simply buy a pomodoro? Well, I want my laptop to take care of me the way
 # Pomodoro Timer Help
 -------------------
 
-![image](15-5-3.png)
+![image](https://raw.githubusercontent.com/1darshanpatil/termoto/main/15-5-3.png)
 
 
 ## Install the package
@@ -48,7 +48,7 @@ $ termato -w=25 -b=5 -r=4
 
 ## License
 
-This project is licensed under the Custom License. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the Custom License. See the [LICENSE](https://github.com/1darshanpatil/termoto/blob/main/LICENSE) file for details.
 
 
 ## Future Versions, Bug, and Errors: 
